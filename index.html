@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Project</title>
+  </head>
+  <body>
+    <header>
+      <h1>SL Information</h1>
+    </header>
+
+    <main>
+      <!-- div container för hela sl -->
+      <div id="sl-container">
+        <!-- Form för input som ska hanteras vid submittion i javascript -->
+        <div id="form">
+          <form action="#">
+            <label for="station-från">Från:</label>
+            <input type="text" id="station-från" />
+
+            <label for="station-till">Till:</label>
+            <input type="text" id="station-till" />
+
+            <input type="submit" />
+          </form>
+        </div>
+
+        <div id="display-information">
+          <div id="bus-info"></div>
+
+          <div id="metro-info"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+/* Allmönt style */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header styling */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
+  background-color: #00308f;
+  color: white;
+}
+
+/* Main styling */
+
+/* Style för sl container */
+#sl-container {
+  height: 92.5vh;
+
+  background-image: url(../img/sl-logo.png);
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+
+  background-color: #b2ffff;
+}
+
+/* Form submit button styling */
+form input {
+  border: none;
+  border-radius: 25px;
+  padding: 8px;
+  background-color: #7cb9e8;
+  transition: 0.3s;
+}
+
+form input:hover {
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+}
