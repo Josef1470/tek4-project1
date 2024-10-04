@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <title>Project</title>
   </head>
   <body>
@@ -16,18 +21,27 @@
       <div id="sl-container">
         <!-- Form för input som ska hanteras vid submittion i javascript -->
         <div id="form">
-          <form action="#">
+          <form>
             <label for="station-från">Från:</label>
             <input type="text" id="station-från" />
 
             <label for="station-till">Till:</label>
             <input type="text" id="station-till" />
 
-            <input type="submit" />
+            <button id="sendBtn" type="submit">Submit</button>
           </form>
         </div>
 
-        <div id="display-information">
+        <div class="info_container" id="display-information">
+          <!-- Slider main container -->
+          <swiper-container
+            class="mySwiper"
+            effect="cards"
+            grab-cursor="true"
+            id="swiper"
+          >
+          </swiper-container>
+
           <div id="bus-info"></div>
 
           <div id="metro-info"></div>
@@ -37,6 +51,7 @@
 
     <footer></footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
